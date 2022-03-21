@@ -1,0 +1,46 @@
+.list {
+  display: grid;
+  gap: 1rem;
+  padding: 0.5rem;
+  max-height: 150px;
+  overflow-y: scroll;
+}
+
+.listItem,
+.left,
+.income,
+.expense {
+  display: flex;
+  align-items: center;
+}
+
+.listItem {
+  justify-content: space-between;
+}
+
+.left {
+  gap: 0.5rem;
+}
+
+.listItem p {
+  font-size: 0.7rem;
+}
+
+.income,
+.expense {
+  border-radius: 100%;
+  color: #fff;
+  justify-content: center;
+}
+
+.income {
+  background-color: rgba(0, 255, 0, 0.5);
+}
+
+.expense {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.delete {
+  cursor: pointer;
+}

@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/money.png);
+  background-size: cover;
+  height: 100vh;
+  display: grid;
+}
+
+.container {
+  width: 90%;
+  margin: 3rem auto;
+  display: grid;
+  gap: 2rem 1.5rem;
+}
+
+.desktop {
+  display: none;
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    align-items: center;
+  }
+
+  .container {
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+}

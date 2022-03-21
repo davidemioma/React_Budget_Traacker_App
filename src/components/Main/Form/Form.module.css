@@ -1,0 +1,38 @@
+.form {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.select div {
+  width: 100%;
+}
+
+.select,
+.input {
+  display: grid;
+  align-items: center;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.input {
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  background-color: #fff;
+  outline: none;
+  border: 1px solid lightgray;
+}
+
+.btn:hover {
+  opacity: 0.6;
+}
+
+.speech {
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+}
